@@ -20,7 +20,7 @@ class Song(models.Model):
     '''The Song model which creates tables in the database for song objects storage'''
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     song_title = models.CharField(max_length=250)
-    audo_file = models.FileField(default='')
+    audio_file = models.FileField(default='')
     is_favourite = models.BooleanField(default=False)
 
     def __str__(self):
