@@ -42,6 +42,9 @@ class AlbumDeleteView(DeleteView):
 
 
 
+def favourite_album(request, album_id):
+    pass
+
 
 
             #################
@@ -76,3 +79,6 @@ class SongDeleteView(DeleteView):
     model = Song
 
 
+
+def favorite_song(request, song_id):
+    pass
